@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="./stylesheets/main.scss">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-4"  data-bs-theme="dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home Page</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="about.html">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hobbies.html">My Hobbies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true" href="racing.html">GT Racing Career</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true" href="Weightlifting.html">Weightlifting Records</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-disabled="true">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div>
+        <h1 class="title2">Contact Me</h1>
+      </div>
+</header>
+<main>
+  <form class="container">
+    <fieldset class="mb-3">
+        <legend>Personal Information</legend>
+      <div class="row"> 
+        <div class="mb-3 col-md">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" name="fullname" id="fullName" required aria-required="true" class="form-control">
+        </div>
+        <div class="mb-3 col-md">
+            <label for="Email" class="form-label">Email</label>
+            <input type="email" name="emailAddress" id="email" required aria-required="true" class="form-control" aria-describedby="emailHelp" oninput="validateEmail(this.value)">
+        </div>
+      </div>  
+    </fieldset>
+
+    <fieldset class=" mb-3">
+        <legend>Message</legend>
+        <label for="msgReason" class="form-label">Reason for contacting:</label>
+        <select name="reason" id="msgReason" required aria-required="true" class="form-select">
+            <option value="">Please select</option>
+            <option value="sayHello">Just saying "hi"</option>
+            <option value="collab">I want to about the GT world</option>
+            <option value="feedback">I have the smae hobbies</option>
+            <option value="bug">I love skiing too!</option>
+        </select>
+        <label for="msgSubject" class="form-label">Subject</label>
+        <input type="text" name="subject" id="msgSubject" class="from-control-lg from-control">
+        <textarea name="message" id="msgContent" cols="30" rows="10" required aria-required="true" class="form-control"></textarea>
+    </fieldset>
+    <fieldset class=" mb-3">
+        <legend>How did you hear about me ?</legend>
+    <div class="form-check">
+        <input type="checkbox" id="tookClass" name="tookClass" class="form-check-input">
+        <label for="tookClass" class="form-check-label">Want to be a racing driver</label>
+    </div>  
+    <div class="form-check">
+        <input type="checkbox" id="friendClass" name="friendClass" class="form-check-input">
+        <label for="friendClass" class="form-check-label">Want to lift weights</label>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" id="realLife" name="realLife" class="form-check-input">
+        <label for="realLife" class="form-check-label">I know you in real life</label>
+    </div>
+    </fieldset>
+    <fieldset class=" mb-3">
+        <legend>Do you want to be friends ?</legend>
+    <div class="form-check">
+        <input type="radio" name="Gatorade" id="naturally" class="form-check-input">
+        <label for="naturally" class="form-check-label">I would love to!</label>
+    </div>
+    <div class="form-check">
+        <input type="radio" name="Gatorade" id="nope" class="form-check-input">
+        <label for="nope" class="form-check-label">I am interested</label>
+    </div>
+    </fieldset>
+    <div class="p-5">
+        <button type="submit" class="btn btn-primary py-1 fs-3">Submit</button>
+    </div>
+  </form>
+
+  <footer class="footer">
+    <div class="footer-column">
+      <a href="#"><img src="facebook-logo.png" alt="Facebook"></a>
+    </div>
+    <div class="footer-column">
+      <a href="#"><img src="twitter-logo.png" alt="Twitter"></a>
+    </div>
+    <div class="footer-column">
+      <a href="#"><img src="instagram-logo.png" alt="Instagram"></a>
+    </div>
+  </footer>
+</main>
+    
+<script type="module" src="./javascripts/main.js"></script>    
+</body>
+</html>

@@ -1,1 +1,98 @@
-// Your styles go here
+@import "bootstrap/scss/bootstrap";
+
+.title{
+    text-align: center;
+    padding: 200px;
+    background-color: grey;
+    color: white;
+    font-size: 100px;
+}
+
+.title2{
+    text-align: center;
+    padding: 100px;
+    background-color: grey;
+    color: white;
+    font-size: 100px;
+}
+
+.footer {
+    display: flex;
+    align-items: right;
+    background-color: #333;
+    color: white;
+    padding: 100px 0;
+  }
+  
+  .footer-column {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .footer-column img {
+    width: 50px;
+}
+
+  .image-2{
+    width: 70%;
+}
+  
+.image-container{
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+.image-scroll{
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+.image-scroll img {
+    width: 70%; 
+    height: 90%; 
+}
+
+
+@keyframes scroll{
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-100%);}
+}
+
+.stats{
+    background-color: grey;
+    color: white;
+}
+
+.imgcont{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 6fr 3fr 3fr 2fr 1fr 1fr 2fr;
+    gap: 10px;
+}
+
+.imgcont img {
+    width: 100%; 
+    height: auto; 
+}
+
+.img1{
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.img2{
+    grid-area: 2 / 3 / span 1 / span 4;
+}
+
+.img3{
+    grid-area: 1 / 4 / span 1 / span 3;
+}
+
+.img4{
+    grid-area: 2 / 1 / span 1 / span 2;
+}
+
+.img5{
+    grid-area: 1 / 2 / span 1 / span 2;
+}
