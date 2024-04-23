@@ -7,3 +7,4 @@ require("../stylesheets/main.scss")
 
 
 import "bootstrap";
+import * as fontawesome from "@fortawesome/fontawesome-free/js/all"
